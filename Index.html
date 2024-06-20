@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="background">
+        <div class="form-container">
+            <h1>WELCOME</h1>
+            <p><b>Hi, What up dawg! My name is Skyzer</p></b>
+                <div class="quote-container">
+      <blockquote>
+        "Aku Tanpa Mu Bagaikan HTML Tanpa CSS"
+      </blockquote>
+    </div>
+    
+
+    <div class="container">
+        <img src="foto.jpg" alt="Foto">
+        <p>Ini.</p>
+    </div>
+    
+    <div class="social-icons">
+                <a href="https://www.tiktok.com" target="_blank" class="fab fa-tiktok tiktok-icon"></a>
+                <a href="https://www.instagram.com" target="_blank" class="fab fa-instagram instagram-icon"></a>
+                <a href="https://www.youtube.com" target="_blank" class="fab fa-youtube youtube-icon"></a>
+            </div>
+                <div class="kodham">
+        <button id="khodamMuButton">Khodam Mu</button>
+    </div>
+
+    <script>
+        document.getElementById('khodamMuButton').addEventListener('click', function() {
+            const texts = ['Harimau malaya', 'Herman Sumatera', 'Buaya Putih', 'Bagas Dribble', 'Ujang Cimahi', 'Antok', 'Narji Mukbang', 'Serigala Kalimantan', 'Saepul Ciledug', 'IF YOU MOVE YOURE GAY!'];
+            const randomText = texts[Math.floor(Math.random() * texts.length)];
+            this.textContent = randomText;
+            this.disabled = true;
+        });
+    </script>
+        </div>
+        
+    </div>
+    
+ 
+</head>
+
+</body>
+</html>
